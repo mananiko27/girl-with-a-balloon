@@ -1,10 +1,12 @@
 
 <section id="marta" class="marta-section">
-  <h2>mARTa</h2>
+  <div class="marta-header">
+    <h2><span class="marta-m">m</span><span class="marta-art">ART</span><span class="marta-a">a</span></h2>
+    <img src="balloon.jpg" alt="Girl with Balloon" class="balloon-logo" />
+  </div>
 
   <div class="marta-block">
     <p>This space is born from love, devotion, and an eternal bond.</p>
-    <img src="balloon.jpg" alt="Balloon artwork" class="marta-img right" />
   </div>
 
   <div class="marta-block">
@@ -24,7 +26,6 @@
 
   <div class="marta-block">
     <p>My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
-    <img src="pink_flower_transparent.png" alt="Child art flower" class="marta-img right" />
   </div>
 </section>
 
@@ -36,12 +37,43 @@
     color: #222;
   }
 
-  .marta-section h2 {
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
+  .marta-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .marta-header h2 {
     font-size: 3rem;
-    color: white;
-    margin-bottom: 2rem;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .marta-m {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    color: #fff;
+  }
+
+  .marta-art {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 3.4rem;
+    color: #fff;
+  }
+
+  .marta-a {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    color: #fff;
+  }
+
+  .balloon-logo {
+    height: 80px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
 
   .marta-block {
