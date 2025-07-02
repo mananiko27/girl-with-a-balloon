@@ -4,77 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <title>mARTa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Georgia&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 40px;
-            font-family: Georgia, serif;
-            background: linear-gradient(to bottom, #fddcc3, #fff3d1);
-            color: #1e1e1e;
-            line-height: 1.6;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom right, #f9d5cb, #fff6e0);
+            color: #222;
+            line-height: 1.7;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .title {
-            font-size: 3em;
-            font-family: 'Brush Script MT', cursive;
-            font-weight: normal;
-            margin-right: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 58px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
         }
-        .balloon {
-            width: 60px;
-            height: auto;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-        }
-        .image-left, .image-right {
-            width: 120px;
-            height: auto;
-            vertical-align: middle;
+        .title img {
+            height: 70px;
         }
         .paragraph {
             margin-bottom: 30px;
         }
-        .final-images {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .final-images img {
+        .img-left {
+            float: left;
             width: 160px;
-            margin: 10px;
+            margin: 5px 20px 10px 0;
+        }
+        .img-right {
+            float: right;
+            width: 160px;
+            margin: 5px 0 10px 20px;
+        }
+        .center-image {
+            display: block;
+            margin: 40px auto 0;
+            width: 200px;
+        }
+        p {
+            margin: 0 0 10px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="title">mARTa</div>
-        <img src="balloon_smaller (1).png" alt="Balloon" class="balloon">
+    <div class="title">
+        m<span style="font-size: 72px;">ART</span>a
+        <img src="images/balloon.png" alt="Balloon">
     </div>
-    <div class="content">
-        <div class="paragraph">
-            <p>This space is born from love, devotion, and an eternal bond.</p>
-            <p>It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create. <img src="sunflower.jpg" alt="Sunflower" class="image-right"></p>
-        </div>
-        <div class="paragraph">
-            <p><img src="peach.jpg" alt="Peach" class="image-left"> Her sense of color, shape, and beauty ran deep.</p>
-            <p>Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
-        </div>
-        <div class="paragraph">
-            <p>This space isn’t about perfection.</p>
-            <p>It’s about imagination, joy and simple forms that radiate warmth, color and comfort.</p>
-            <p>It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder. <img src="rainbow.jpg" alt="Rainbow" class="image-right"></p>
-        </div>
-        <div class="paragraph">
-            <p><img src="picasso.jpg" alt="Picasso" class="image-left"> My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling.</p>
-            <p>I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
-        </div>
-        <div class="final-images">
-            <img src="branch.jpg" alt="Branch">
-        </div>
+
+    <div class="paragraph">
+        <p>This space is born from love, devotion, and an eternal bond.</p>
+        <p>It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally in our hearts, eternally unattainable, eternally 8 years old.</p>
+        <p>She left behind a world of inspiration which lives on in every piece I create.</p>
+        <img src="images/sunflower.jpg" alt="Sunflower" class="img-right">
     </div>
+
+    <div class="paragraph">
+        <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
+        <img src="images/peach.jpg" alt="Peach" class="img-left">
+    </div>
+
+    <div class="paragraph">
+        <p>From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.</p>
+        <img src="images/rainbow.jpg" alt="Rainbow" class="img-right">
+    </div>
+
+    <div class="paragraph">
+        <p>It’s not about perfection — it’s about warmth, connection, and the charm of simplicity. A space that speaks to those who carry inside the joy of a child’s eye and heart.</p>
+        <img src="images/picasso.jpg" alt="Picasso" class="img-left">
+    </div>
+
+    <div class="paragraph">
+        <p>My hope is that these creations brighten your home and soul. That they connect you with the child you once were — that they bring back laughter, memories, and a feeling of closeness and understanding that requires no explanation.</p>
+    </div>
+
+    <img src="images/branch.jpg" alt="Branch" class="center-image">
 </body>
 </html>
