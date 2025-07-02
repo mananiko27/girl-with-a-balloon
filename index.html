@@ -2,109 +2,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mARTa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-image: url('texture2.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #111;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.6);
-      padding: 2rem;
-      border-radius: 12px;
-    }
-    h1 {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 3.5rem;
-      text-align: left;
-      color: white;
-      margin-bottom: 0.5rem;
-    }
-    .balloon-img {
-      width: 140px;
-      float: right;
-      margin-top: -3rem;
-    }
-    .section {
-      margin: 2.5rem 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-    .section:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-    .section img {
-      width: 180px;
-      border-radius: 8px;
-      margin: 1rem;
-    }
-    .section p {
-      flex: 1 1 500px;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      margin: 0 1rem;
-    }
-    @media screen and (max-width: 768px) {
-      .section {
-        flex-direction: column !important;
-        text-align: center;
-      }
-      .section img {
-        margin-bottom: 1rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>mARTa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #fbd4c3, #f7caa4);
+            color: #2e2e2e;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 64px;
+            margin: 0;
+            margin-right: 20px;
+        }
+        .header img {
+            height: 80px;
+            border-radius: 4px;
+        }
+        .section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        .section img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        }
+        .text {
+            max-width: 700px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>mARTa</h1>
-    <img src="balloon.jpg" alt="Girl with Balloon" class="balloon-img" />
-
-    <div class="section">
-      <p>
-        This space is born from love, devotion, and an eternal bond.
-        It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old.
-        She left behind a world of inspiration which lives on in every piece I create.
-      </p>
-      <img src="sunflower.jpg" alt="Sunflower Art" />
+    <div class="container">
+        <div class="header">
+            <h1>mARTa</h1>
+            <img src="balloon.jpg" alt="Girl with Balloon">
+        </div>
+        <div class="section">
+            <div class="text">
+                <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+                <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
+                <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+                <p>My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart, and inspire your spirit.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="section">
-      <img src="peach.jpg" alt="Green Tree Art" />
-      <p>
-        Her sense of color, shape, and beauty ran deep.
-        Her drawings, her crafts, her playful eye – all were inimitable.
-        Yet I dare and try, with her spirit in mind.
-      </p>
-    </div>
-
-    <div class="section">
-      <p>
-        This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort.
-        It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.
-      </p>
-      <img src="rainbow.jpg" alt="Rainbow Flower Art" />
-    </div>
-
-    <div class="section">
-      <img src="picasso.jpg" alt="Playful Face Art" />
-      <p>
-        My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling.
-        I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.
-      </p>
-    </div>
-  </div>
 </body>
 </html>
