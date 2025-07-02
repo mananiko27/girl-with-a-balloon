@@ -5,27 +5,29 @@
     <img src="balloon.jpg" alt="Girl with Balloon" class="balloon-logo" />
   </div>
 
-  <div class="marta-block">
-    <p>This space is born from love, devotion, and an eternal bond.</p>
+  <div class="marta-text">
+    <p>
+      This space is born from love, devotion, and an eternal bond.
+      <img src="peach.jpg" alt="Peach artwork" class="inline-img" />
+    </p>
+    <p>
+      <img src="sunflower.jpg" alt="Sunflower painting" class="inline-img left" />
+      It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.
+    </p>
+    <p>
+      Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.
+    </p>
+    <p>
+      This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.
+    </p>
+    <p>
+      My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.
+    </p>
   </div>
 
-  <div class="marta-block">
-    <img src="sunflower.jpg" alt="Sunflower painting" class="marta-img left" />
-    <p>It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
-  </div>
-
-  <div class="marta-block">
-    <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
-    <img src="picasso.jpg" alt="Abstract tree painting" class="marta-img right" />
-  </div>
-
-  <div class="marta-block">
-    <img src="rainbow.jpg" alt="Watercolor flowers" class="marta-img left" />
-    <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
-  </div>
-
-  <div class="marta-block">
-    <p>My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
+  <div class="gallery-bottom">
+    <img src="picasso.jpg" alt="Child artwork 1" />
+    <img src="rainbow.jpg" alt="Child artwork 2" />
   </div>
 </section>
 
@@ -41,8 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
 
   .marta-header h2 {
@@ -71,44 +73,52 @@
   }
 
   .balloon-logo {
-    height: 80px;
+    height: 60px;
     border-radius: 4px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
 
-  .marta-block {
+  .marta-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+    position: relative;
+  }
+
+  .inline-img {
+    height: 90px;
+    margin-left: 10px;
+    vertical-align: middle;
+    border: 3px solid #eee4d4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+
+  .inline-img.left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  .gallery-bottom {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
     flex-wrap: wrap;
   }
 
-  .marta-block p {
-    flex: 1;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin: 0;
+  .gallery-bottom img {
+    height: 130px;
+    border: 3px solid #eee4d4;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
-
-  .marta-img {
-    flex: 0 0 200px;
-    max-width: 100%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border: 4px solid #f0e6da;
-  }
-
-  .left { order: -1; }
 
   @media (max-width: 768px) {
-    .marta-block {
+    .marta-header {
       flex-direction: column;
-      align-items: center;
     }
-    .marta-img {
-      margin-bottom: 1rem;
+    .gallery-bottom img {
+      height: 100px;
     }
-    .left, .right { order: 0; }
   }
 </style>
