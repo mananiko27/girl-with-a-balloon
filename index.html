@@ -6,83 +6,84 @@
     <title>mARTa</title>
     <style>
         body {
-            background: linear-gradient(to bottom right, #fcd9d9, #fceabb);
-            font-family: Georgia, serif;
-            padding: 40px;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: auto;
-            color: #2e2e2e;
-        }
-        h1 {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 48px;
-            margin-bottom: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom right, #fcd5ce, #f9dcc4, #f8edeb);
+            margin: 40px;
+            color: #222;
         }
         .title-section {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: flex-start;
+        }
+        .title-section h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 48px;
+            margin-right: 20px;
         }
         .title-section img {
-            height: 100px;
-            margin-left: 20px;
+            width: 80px;
+            height: auto;
         }
-        .image-left {
-            float: left;
-            margin: 10px 20px 10px 0;
-            width: 160px;
+        .text-image {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 30px 0;
         }
-        .image-right {
-            float: right;
-            margin: 10px 0 10px 20px;
-            width: 160px;
+        .text-image img {
+            width: 150px;
+            height: auto;
+            margin: 0 20px;
         }
-        .centered-img {
-            display: block;
-            margin: 40px auto 0 auto;
-            width: 180px;
+        .text-left img {
+            order: -1;
         }
-        p {
-            clear: both;
-            text-align: justify;
+        .final-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .final-image img {
+            width: 200px;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="title-section">
         <h1>mARTa</h1>
-        <img src="balloon.png" alt="Balloon">
+        <img src="balloon.jpg" alt="Balloon">
     </div>
 
-    <p>
-        This space is born from love, devotion, and an eternal bond.
-        It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally in our hearts, eternally unattainable, eternally 8 years old.
-        She left behind a world of inspiration which lives on in every piece I create.
-        <img src="sunflower.jpg" alt="Sunflower" class="image-right">
-    </p>
+    <div>
+        <p>This space is born from love, devotion, and an eternal bond.</p>
+        <p>It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally in our hearts, eternally unattainable, eternally 8 years old.</p>
+        <p>She left behind a world of inspiration which lives on in every piece I create.</p>
+    </div>
 
-    <p>
-        Her sense of color, shape, and beauty ran deep.
-        Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.
-        <img src="peach.jpg" alt="Peach" class="image-left">
-    </p>
+    <div class="text-image text-right">
+        <p>Her sense of color, shape, and beauty ran deep.<br>Her drawings, her crafts, her playful eye – all were inimitable. Yet I dare and try, with her spirit in mind.</p>
+        <img src="sunflower.jpg" alt="Sunflower">
+    </div>
 
-    <p>
-        From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.
-        <img src="rainbow.jpg" alt="Rainbow" class="image-right">
-    </p>
+    <div class="text-image text-left">
+        <img src="peach.jpg" alt="Peach">
+        <p>From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.</p>
+    </div>
 
-    <p>
-        It’s not about perfection — it’s about warmth, connection, and the charm of simplicity.
-        A space that speaks to those who carry inside the joy of a child’s eye and heart.
-        <img src="picasso.jpg" alt="Picasso" class="image-left">
-    </p>
+    <div class="text-image text-right">
+        <p>It’s not about perfection — it’s about warmth, connection, and the charm of simplicity.<br>A space that speaks to those who carry inside the joy of a child’s eye and heart.</p>
+        <img src="rainbow.jpg" alt="Rainbow">
+    </div>
 
-    <p>
-        My hope is that these creations brighten your home and soul. That they connect you with the child you once were — that they bring back laughter, memories, and a feeling of closeness and magic.
-    </p>
+    <div class="text-image text-left">
+        <img src="picasso.jpg" alt="Picasso">
+        <p>My hope is that these creations brighten your home and soul. That they connect you with the child you once were — that they bring back laughter, memories, and a feeling of closeness and love.</p>
+    </div>
 
-    <img src="branch.jpg" alt="Branch" class="centered-img">
+    <div class="final-image">
+        <img src="branch.jpg" alt="Branch">
+    </div>
 </body>
 </html>
