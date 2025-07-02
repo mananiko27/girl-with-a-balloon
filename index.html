@@ -1,137 +1,73 @@
 
-<section id="marta" class="marta-section">
-  <div class="marta-header">
-    <h2 class="marta-title">m<span class="large">ART</span>a</h2>
-    <img src="balloon.jpg" alt="Girl with Balloon" class="balloon-logo" />
-  </div>
+<!DOCTYPE html>
 
-  <div class="marta-text-centered">
-    <p>
-      This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old.
-      She left behind a world of inspiration which lives on in every piece I create. <img src="peach.jpg" alt="Peach" class="inline-img" />
-    </p>
-
-    <p>
-      Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable.
-      Yet I dare and try, with her spirit in mind.
-    </p>
-
-    <p>
-      <img src="sunflower.jpg" alt="Sunflower" class="inline-img left" />
-      This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort.
-      It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.
-    </p>
-
-    <p>
-      My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling.
-      I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.
-      <img src="picasso.jpg" alt="Picasso style" class="inline-img" />
-    </p>
-
-    <div class="centered-image">
-      <img src="branch.jpg" alt="Branch Art" class="branch-img" />
-    </div>
-  </div>
-</section>
-
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>mARTa</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet"/>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
-  .marta-section {
-    background: linear-gradient(to bottom right, #f8cbd0, #f9e3b3);
-    padding: 4rem 2rem;
-    font-family: Georgia, serif;
-    color: #222;
-  }
-
-  .marta-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap;
-  }
-
-  .marta-title {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 3.2rem;
-    color: white;
-    margin: 0;
-  }
-
-  .marta-title .large {
-    font-size: 4rem;
-    font-weight: bold;
-  }
-
-  .balloon-logo {
-    height: 90px;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-  }
-
-  .marta-text-centered {
-    max-width: 750px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: justify;
-  }
-
-  .marta-text-centered p {
-    margin-bottom: 1.8rem;
-  }
-
-  .inline-img {
-    height: 100px;
-    max-width: 150px;
-    vertical-align: middle;
-    margin-left: 10px;
-    border: 3px solid #eee4d4;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  }
-
-  .inline-img.left {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    margin-left: 0;
-  }
-
-  .centered-image {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .branch-img {
-    height: 120px;
-    max-width: 180px;
-    border: 3px solid #eee4d4;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-
-  @media (max-width: 768px) {
-    .marta-title {
-      font-size: 2.6rem;
-    }
-    .marta-title .large {
-      font-size: 3rem;
-    }
-    .balloon-logo {
-      height: 70px;
-    }
-    .inline-img,
-    .inline-img.left,
-    .branch-img {
-      float: none;
-      display: block;
-      margin: 1rem auto;
-    }
-    .marta-text-centered {
-      padding: 0 1rem;
-      text-align: left;
-    }
-  }
-</style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            background-color: #fdf6f0;
+            color: #3a3a3a;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .title {
+            text-align: right;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .title span.art {
+            font-size: 64px;
+        }
+        .img-left {
+            float: left;
+            margin: 0 20px 20px 0;
+            width: 200px;
+        }
+        .img-right {
+            float: right;
+            margin: 0 0 20px 20px;
+            width: 200px;
+        }
+        .img-center {
+            display: block;
+            margin: 40px auto 20px;
+            width: 300px;
+        }
+        p {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="title"><span class="m">m</span><span class="art">ART</span><span class="a">a</span></div>
+<p>
+    This space is born from love, devotion, and an eternal bond.
+    It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old.
+    She left behind a world of inspiration which lives on in every piece I create.
+    <img alt="Peach" class="img-right" src="peach.jpg"/>
+</p>
+<p>
+    Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye – all were inimitable.
+    Yet I dare and try, with her spirit in mind.
+</p>
+<p>
+<img alt="Sunflower" class="img-left" src="sunflower.jpg"/>
+    This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort.
+    It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.
+</p>
+<p>
+    My hope is to create decorations that evoke new sensations, yet take you back – to joy, to memories, to that carefree feeling.
+    I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.
+    <img alt="Picasso" class="img-right" src="picasso.jpg"/>
+</p>
+<img alt="Branch" class="img-center" src="branch.jpg"/>
+<img alt="Rainbow" class="img-center" src="rainbow.jpg"/>
+</body>
+</html>
