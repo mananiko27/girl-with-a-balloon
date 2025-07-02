@@ -86,9 +86,10 @@
   }
 
   .inline-img {
-    height: 90px;
-    margin-left: 10px;
+    height: 80px;
+    max-width: 120px;
     vertical-align: middle;
+    margin-left: 10px;
     border: 3px solid #eee4d4;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   }
@@ -109,6 +110,7 @@
 
   .gallery-bottom img {
     height: 130px;
+    max-width: 150px;
     border: 3px solid #eee4d4;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   }
@@ -119,6 +121,12 @@
     }
     .gallery-bottom img {
       height: 100px;
+    }
+    .inline-img,
+    .inline-img.left {
+      float: none;
+      display: block;
+      margin: 1rem auto;
     }
   }
 </style>
