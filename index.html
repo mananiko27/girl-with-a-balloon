@@ -4,94 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <title>mARTa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom right, #f9dcc2, #fceabb);
-            font-family: 'Georgia', serif;
-            color: #4a2c2a;
+            font-family: Georgia, serif;
+            background-color: #f1e0cd;
+            color: #2e2e2e;
             margin: 40px;
             line-height: 1.6;
         }
-        .header {
+        .title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            color: #912f2f;
+            text-align: center;
+            margin-bottom: 10px;
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
+            align-items: center;
+            gap: 15px;
         }
-        .header img {
-            height: 80px;
+        .title img {
+            width: 70px;
         }
-        .header h1 {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 38px;
-            color: #a52a2a;
-            margin: 0;
+        .subtitle {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
         }
         .section {
             display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 40px;
+            align-items: center;
             margin-bottom: 40px;
         }
-        .section:nth-child(even) {
+        .section img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .section .text {
+            padding: 0 20px;
+            flex: 1;
+        }
+        .section.reverse {
             flex-direction: row-reverse;
         }
-        .section img {
-            width: 180px;
-            border: 4px solid white;
-            box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-        }
-        .text-block {
-            max-width: 600px;
-        }
-        h2 {
-            text-align: center;
-            color: #4a2c2a;
+        .footer-image {
+            display: block;
+            margin: 40px auto 0;
+            width: 150px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>mARTa</h1>
-        <img src="balloon.jpg" alt="Girl with balloon">
-    </div>
-    <h2>girl with a balloon</h2>
+
+<div class="title">
+    mARTa
+    <img src="Girl with Balloon.jpg" alt="Girl with balloon">
+</div>
+
+<div class="subtitle">girl with a balloon</div>
+
+<div class="container">
 
     <div class="section">
-        <img src="branch.jpg" alt="Painting 1">
-        <div class="text-block">
+        <img src="peach.jpg" alt="Peach artwork">
+        <div class="text">
             <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
         </div>
     </div>
 
-    <div class="section">
-        <img src="sunflower.jpg" alt="Sunflower Painting">
-        <div class="text-block">
+    <div class="section reverse">
+        <img src="sunflower.jpg" alt="Sunflower artwork">
+        <div class="text">
             <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
         </div>
     </div>
 
     <div class="section">
-        <img src="rainbow.jpg" alt="Rainbow Painting">
-        <div class="text-block">
-            <p>This space isn’t about perfection, precision. It’s about imagination, communication, expression of joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+        <img src="rainbow.jpg" alt="Rainbow artwork">
+        <div class="text">
+            <p>This space isn’t about perfection. It’s about imagination, communication, expression of joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
         </div>
     </div>
 
-    <div class="section">
-        <img src="picasso.jpg" alt="Picasso Style Painting">
-        <div class="text-block">
+    <div class="section reverse">
+        <img src="picasso.jpg" alt="Picasso-style artwork">
+        <div class="text">
             <p>Every piece in mARTa is crafted with care, heart and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.</p>
         </div>
     </div>
 
     <div class="section">
-        <img src="branch.jpg" alt="Branch Painting">
-        <div class="text-block">
+        <img src="branch.jpg" alt="Branch artwork" class="footer-image">
+        <div class="text">
             <p>My hope is that these creations brighten your home and soul. That they connect you with the child you once were — that they bring back laughter, memories, and a feeling of closeness and joy.</p>
         </div>
     </div>
+
+</div>
+
 </body>
 </html>
