@@ -6,44 +6,112 @@
     <title>mARTa — girl with a balloon</title>
     <style>
         body {
+            background-color: #f4e3c1;
             font-family: Georgia, serif;
-            background-color: #f3e5ca;
-            color: #3a3a3a;
+            color: #3b2f2f;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            margin: 0;
-            padding: 20px;
         }
-        .header-img {
-            width: 120px;
-            margin: 0 auto 10px auto;
-            display: block;
-        }
-        .title {
-            font-family: 'Dancing Script', cursive;
-            font-size: 32px;
-            margin: 0;
-            color: #891c1c;
-        }
-        .subtitle {
-            font-family: 'Dancing Script', cursive;
-            font-size: 24px;
-            margin-bottom: 40px;
-            color: #891c1c;
-        }
-        .content {
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            text-align: left;
+            padding: 40px 20px;
+        }
+
+        .logo-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-title img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        h1, h2 {
+            margin: 5px 0;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 32px;
+            color: #8b0000;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #8b0000;
+        }
+
+        .text-block {
+            margin: 30px 0;
+            text-align: justify;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .text-block img {
+            width: 180px;
+            border: 1px solid #ccc;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .text-block {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .text {
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="Girl with Baloon.jpg" alt="Girl with balloon" class="header-img">
-    <h1 class="title">mARTa</h1>
-    <h2 class="subtitle">girl with a balloon</h2>
+    <div class="container">
+        <div class="logo-title">
+            <img src="Girl with Balloon.jpg" alt="Girl with balloon">
+            <h1>mARTa</h1>
+            <h2>girl with a balloon</h2>
+        </div>
 
-    <div class="content">
-        <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+        <div class="text-block">
+            <img src="peach.jpg" alt="Peach painting">
+            <div class="text">
+                <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <img src="sunflower.jpg" alt="Sunflower painting">
+            <div class="text">
+                <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <img src="rainbow.jpg" alt="Rainbow painting">
+            <div class="text">
+                <p>This space isn’t about perfection, precision. It’s about imagination, communication, expression of joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <img src="picasso.jpg" alt="Picasso-style painting">
+            <div class="text">
+                <p>Every piece in mARTa is crafted with care, heart and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
