@@ -4,84 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <title>mARTa — girl with a balloon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f3e3c3;
-            font-family: Georgia, serif;
-            margin: 40px auto;
-            max-width: 800px;
-            line-height: 1.6;
-            color: #2d1d1d;
+            background-color: #f4e4c1;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
         .title {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2.5em;
-            text-align: center;
-            margin-top: 10px;
+            font-size: 36px;
+            margin-top: 20px;
         }
         .subtitle {
-            font-family: 'Dancing Script', cursive;
-            font-size: 1.5em;
-            text-align: center;
-            margin-top: -10px;
+            font-size: 20px;
+            margin-bottom: 30px;
         }
         .balloon-img {
+            width: 120px;
+            margin: 20px auto;
             display: block;
-            margin: 0 auto;
-            height: 120px;
         }
         .content {
-            margin-top: 30px;
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.6;
         }
-        .img-text-pair {
+        .image-text-block {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
+            justify-content: center;
+            margin: 40px auto;
+            gap: 40px;
         }
-        .img-text-pair img {
-            max-width: 45%;
+        .image-text-block img {
+            width: 180px;
             height: auto;
-            border: 1px solid #ccc;
         }
-        .img-text-pair:nth-child(even) {
-            flex-direction: row-reverse;
+        .paragraph {
+            flex: 1;
         }
-        .img-text-pair p {
-            width: 50%;
-            padding: 0 20px;
+        @media (max-width: 768px) {
+            .image-text-block {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
 <body>
+    <h1 class="title">mARTa — girl with a balloon</h1>
     <img src="balloon.jpg" alt="Girl with balloon" class="balloon-img">
-    <div class="title">mARTa — girl with a balloon</div>
 
     <div class="content">
-        <div class="img-text-pair">
-            <img src="peach.jpg" alt="Peach">
-            <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+        <div class="image-text-block">
+            <img src="peach.jpg" alt="Peach artwork">
+            <div class="paragraph">
+                <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+            </div>
         </div>
 
-        <div class="img-text-pair">
-            <img src="sunflower.jpg" alt="Sunflower">
-            <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
+        <div class="image-text-block">
+            <img src="sunflower.jpg" alt="Sunflower artwork">
+            <div class="paragraph">
+                <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
+            </div>
         </div>
 
-        <div class="img-text-pair">
-            <img src="rainbow.jpg" alt="Rainbow">
-            <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+        <div class="image-text-block">
+            <img src="rainbow.jpg" alt="Rainbow artwork">
+            <div class="paragraph">
+                <p>My hope is to create decorations that evoke new sensations, yet take you back — to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
+            </div>
         </div>
 
-        <div class="img-text-pair">
-            <img src="picasso.jpg" alt="Picasso">
-            <p>Every piece in mARTa is crafted with care, heart, and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions—these creations are lively, heartfelt, and full of emotions.</p>
-        </div>
-
-        <div class="img-text-pair">
-            <img src="branch.jpg" alt="Branch">
-            <p>My hope is to create decorations that evoke new sensations, yet take you back - to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
+        <div class="image-text-block">
+            <img src="picasso.jpg" alt="Picasso artwork">
+            <div class="paragraph">
+                <p>Every piece in mARTa is crafted with care, heart, and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions—these creations are lively, heartfelt, and full of emotions.</p>
+            </div>
         </div>
     </div>
 </body>
