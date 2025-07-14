@@ -6,111 +6,81 @@
     <title>mARTa — girl with a balloon</title>
     <style>
         body {
-            background-color: #f4e3c1;
-            font-family: Georgia, serif;
-            color: #3b2f2f;
+            font-family: 'Georgia', serif;
+            background-color: #f6e9d7;
+            color: #3d2b1f;
             margin: 0;
-            padding: 0;
+            padding: 2em;
+            line-height: 1.6;
+        }
+        .header {
             text-align: center;
+            margin-bottom: 1.5em;
         }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        .header img {
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 10px;
         }
-
-        .logo-title {
+        .header-title {
+            display: inline-block;
+            font-size: 2em;
+            color: #8b1e3f;
+            font-family: 'Georgia', serif;
+            vertical-align: middle;
+        }
+        .section {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            margin: 2em auto;
+            max-width: 900px;
         }
-
-        .logo-title img {
-            width: 80px;
-            margin-bottom: 10px;
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
         }
-
-        h1, h2 {
-            margin: 5px 0;
+        .section img {
+            width: 220px;
+            height: auto;
+            margin: 0 2em;
+            border: 5px solid #f0d6ba;
         }
-
-        h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 32px;
-            color: #8b0000;
-        }
-
-        h2 {
-            font-size: 20px;
-            color: #8b0000;
-        }
-
-        .text-block {
-            margin: 30px 0;
-            text-align: justify;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        .text-block img {
-            width: 180px;
-            border: 1px solid #ccc;
-        }
-
         .text {
-            flex: 1;
-        }
-
-        @media (max-width: 768px) {
-            .text-block {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            .text {
-                text-align: center;
-            }
+            max-width: 450px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-title">
-            <img src="Girl with Balloon.jpg" alt="Girl with balloon">
-            <h1>mARTa</h1>
-            <h2>girl with a balloon</h2>
-        </div>
+    <div class="header">
+        <img src="Girl with Balloon.jpg" alt="Girl with balloon">
+        <span class="header-title">mARTa — girl with a balloon</span>
+    </div>
 
-        <div class="text-block">
-            <img src="peach.jpg" alt="Peach painting">
-            <div class="text">
-                <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
-            </div>
+    <div class="section">
+        <img src="peach.jpg" alt="Painting of peaches">
+        <div class="text">
+            <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
         </div>
+    </div>
 
-        <div class="text-block">
-            <img src="sunflower.jpg" alt="Sunflower painting">
-            <div class="text">
-                <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
-            </div>
+    <div class="section">
+        <img src="sunflower.jpg" alt="Sunflowers painting">
+        <div class="text">
+            <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
         </div>
+    </div>
 
-        <div class="text-block">
-            <img src="rainbow.jpg" alt="Rainbow painting">
-            <div class="text">
-                <p>This space isn’t about perfection, precision. It’s about imagination, communication, expression of joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
-            </div>
+    <div class="section">
+        <img src="rainbow.jpg" alt="Rainbow painting">
+        <div class="text">
+            <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
         </div>
+    </div>
 
-        <div class="text-block">
-            <img src="picasso.jpg" alt="Picasso-style painting">
-            <div class="text">
-                <p>Every piece in mARTa is crafted with care, heart and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.</p>
-            </div>
+    <div class="section">
+        <img src="picasso.jpg" alt="Childlike drawing">
+        <div class="text">
+            <p>Every piece in mARTa is crafted with care, heart and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to cute animals with playful details — her legacy radiates in every handmade piece that now takes shape.</p>
         </div>
     </div>
 </body>
