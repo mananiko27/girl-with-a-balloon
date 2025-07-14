@@ -4,111 +4,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>mARTa – girl with a balloon</title>
+  <title>mARTa — girl with a balloon</title>
   <style>
     body {
-      background-color: #f2e3cf;
+      background-color: #f6e8d6;
       font-family: 'Georgia', serif;
-      color: #3a2e1f;
+      color: #3d2b1f;
+      margin: 0;
+      padding: 0 1rem;
+    }
+    header {
       text-align: center;
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
+      padding: 2rem 0 1rem;
     }
-    .title-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 10px;
-    }
-    .title-logo img {
-      width: 50px;
-      height: auto;
+    .title-section img {
+      width: 60px;
+      vertical-align: middle;
     }
     h1 {
-      font-size: 2.4em;
+      font-size: 2rem;
       font-weight: normal;
-      color: #822c2c;
-      margin: 0;
+      color: #7a1f1f;
+      display: inline;
+      font-family: 'Georgia', serif;
     }
     h2 {
-      font-size: 1.6em;
+      font-size: 1.5rem;
       font-weight: normal;
-      margin-top: 5px;
-      color: #822c2c;
+      margin-top: 0;
     }
-    .section {
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .block {
       display: flex;
+      margin: 2rem 0;
       align-items: center;
-      justify-content: center;
-      margin: 40px 0;
-      gap: 30px;
-      flex-wrap: wrap;
     }
-    .section img {
-      max-width: 240px;
-      height: auto;
-      border-radius: 5px;
+    .block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .block img {
+      width: 200px;
+      margin: 0 1rem;
+      border: 4px solid white;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     }
     .text {
-      max-width: 420px;
-      text-align: left;
-      font-size: 1.1em;
-      line-height: 1.6em;
+      flex: 1;
     }
-    .final-paragraph {
-      margin-top: 60px;
-      font-style: italic;
-      font-size: 1.1em;
-      line-height: 1.6em;
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #6c584c;
     }
   </style>
 </head>
 <body>
-  <div class="title-logo">
+  <header class="title-section">
     <img src="balloon.jpg" alt="Girl with balloon" />
-    <div>
-      <h1>mARTa</h1>
-      <h2>girl with a balloon</h2>
+    <h1>mARTa — girl with a balloon</h1>
+  </header>
+
+  <div class="content">
+    <div class="block">
+      <img src="peach.jpg" alt="Peach" />
+      <div class="text">
+        <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <img src="sunflower.jpg" alt="Sunflower" />
+      <div class="text">
+        <p>Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <img src="rainbow.jpg" alt="Rainbow" />
+      <div class="text">
+        <p>This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <img src="picasso.jpg" alt="Picasso style" />
+      <div class="text">
+        <p>Every piece in mARTa is crafted with care, heart, and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions—these creations are lively, heartfelt, and full of emotions.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <img src="branch.jpg" alt="Branch" />
+      <div class="text">
+        <p>My hope is to create decorations that evoke new sensations, yet take you back — to joy, to memories, to that carefree feeling. I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
+      </div>
     </div>
   </div>
 
-  <div class="section">
-    <img src="peach.jpg" alt="Peach artwork" />
-    <div class="text">
-      This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, <strong>Martha</strong> — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="sunflower.jpg" alt="Sunflower artwork" />
-    <div class="text">
-      Her sense of color, shape, and beauty ran deep. Her drawings, her crafts, her playful eye — all were inimitable. Yet, with her spirit in mind, I dare and try.
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="rainbow.jpg" alt="Rainbow artwork" />
-    <div class="text">
-      This space isn’t about perfection. It’s about imagination, joy and simple forms that radiate warmth, color and comfort. It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="picasso.jpg" alt="Picasso artwork" />
-    <div class="text">
-      Every piece in mARTa is crafted with care, heart, and a spark of childhood magic. From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions—these creations are lively, heartfelt, and full of emotions.
-    </div>
-  </div>
-
-  <div class="section">
-    <img src="branch.jpg" alt="Branch artwork" />
-  </div>
-
-  <div class="final-paragraph">
-    My hope is to create decorations that evoke new sensations, yet take you back — to joy, to memories, to that carefree feeling.<br>
-    I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.
-  </div>
+  <footer>
+    <p>Thank you for visiting mARTa.</p>
+  </footer>
 </body>
 </html>
